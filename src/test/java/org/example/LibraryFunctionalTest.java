@@ -19,9 +19,9 @@ public class LibraryFunctionalTest {
 
         List<Book> books = library.getAllBooks();
         assertEquals(1, books.size());
-        assertEquals("Dune", books.getFirst().getTitle());
+        assertEquals("Dune", books.get(0).getTitle());
 
         library.exportBooksToTxt("books.txt");
-        System.out.println(books.getFirst());
+        System.out.println(books.get(0));
     }
 }

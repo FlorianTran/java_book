@@ -41,7 +41,7 @@ public class LibraryTest {
         library.addBook(new Book("1984", "George Orwell", 1949));
         List<Book> books = library.getAllBooks();
         assertEquals(2, books.size());
-        assertEquals("1984", books.getFirst().getTitle());
+        assertEquals("1984", books.get(0).getTitle());
     }
 
     @Test
